@@ -1,0 +1,9 @@
+procedure main()
+   while line := read() do {
+      if line == "##########" then {
+         close(\out)
+         out := open(name := read(),"w") | stop("cannot open ",name)
+         }
+      else write(out,line)
+      }
+end
